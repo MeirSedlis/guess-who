@@ -30,7 +30,7 @@ function pickACard(){
 }
 
 function guessChecker(){
-    if($(this).data() === randomNameGenerator()){
+    if($(this).data().name === randomNameGenerator()){
         alert('correct!');
         pickACard();
     }
