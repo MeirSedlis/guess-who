@@ -11,7 +11,7 @@ function onReady(){
 function appendDivs(){
     for (let person of people){
         $('main').append(`
-        <img src="https://github.com/christopher-black.png?size=250" alt="Profile image of Chris">
+        <img src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of Chris">
         `)
     }
 }
