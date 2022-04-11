@@ -1,8 +1,6 @@
 $(document).ready(onReady);
 
 console.log('Here are all the available people:', people);
-// here is the url for chris https://avatars.githubusercontent.com/u/95505985?v=4
-// here is the url for meir https://avatars.githubusercontent.com/u/96435697?v=4
 
 function onReady(){
     appendDivs();
@@ -14,4 +12,12 @@ function appendDivs(){
         <img src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of Chris">
         `)
     }
+}
+
+function randomNumber(min, max){
+    return Math.floor(Math.random() * (1 + max - min) + min);
+}
+
+function randomNameGenerator(){
+    return people[randomNumber(0, 6)].name;
 }
